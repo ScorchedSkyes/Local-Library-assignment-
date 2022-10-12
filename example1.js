@@ -1,20 +1,49 @@
 const students = [
-    { name: "Leo Yeon-Joo", score: 8.9 },
-    { name: "Morgan Sutton", score: 7.4 },
-    { name: "Natalee Vargas", score: 9.2 },
+    // { name: "Leo Yeon-Joo", 
+    // score: 8.9 },
+    { name: {
+        first :"Benji",
+        last: "Oxner", 
+    },
+    score: 9.9,
+    birthdays : '11/21/88' },
+
+
+
+    
+    { name: {
+        first:"Kris",
+        last: "Harder", 
+    },
+    score: 9.2, 
+    birthdays : '06/23/94'},
   ];
 
 
-// function findStudentScoreByName (students, name){
-//     return students.filter((studentScore)=> studentScore.name === name).map((scorey)=>scorey.score)
-// }
 
-function findStudentScoreByName(students, name) {
-    let found = students.find(studentObj=> studentObj.name === name);
-    if (found) {return found.score}
-  }
+
+function firstNameAndBirthday (students, name ){
+   const found = students.find(student => student.name.first === name)
+   return found? `${found.name.first} was born on ${found.birthdays} and scored a ${found.score} on the test.` : null
+
+    
+}
+
+
+
 
 
 console.log('🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥')
-console.log(findStudentScoreByName(students, "Morgan Sutton"))
+console.log(firstNameAndBirthday(students, "Benji"))
 console.log('🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥')
+
+
+
+
+
+
+
+
+
+
+
