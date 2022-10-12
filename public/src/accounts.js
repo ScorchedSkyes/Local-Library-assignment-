@@ -43,17 +43,6 @@ function getTotalNumberOfBorrows(account, books) {
   );
   return result;
 
-  //return the result
-
-  // const accID = account.id
-  // let hasBorr = books.forEach((booksObj) => {
-  //   let borrowed = booksObj.borrows
-  //   let borrID = borrowed.every(userHasBorr=>{
-  //     return userHasBorr.id === accID
-  //   })
-  // return result
-
-  // }
 }
 
 // console.log(getTotalNumberOfBorrows(accounts, books))

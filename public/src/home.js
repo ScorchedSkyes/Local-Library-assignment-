@@ -22,21 +22,6 @@ function getTotalAccountsCount(accounts) {
   return accounts.length;
 }
 
-// function getBooksBorrowedCount(books) {
-//   //create a variable that filters books that are borrowed
-//   let isBorr = books.filter((booksObj) => {
-//     //create a variable that is object shorthand for borrows
-//     let borrowed = booksObj.borrows;
-//     //create another variable that checks if some of the returned are equal to false
-//     let isBorrowed = borrowed.some((currBorr) => {
-//       return currBorr.returned === false;
-//     });
-//     //return the variable checking for false
-//     return isBorrowed;
-//   });
-//   //return the main variable and check the total number of objects in that array
-//   return isBorr.length;
-// }
 
 function getBooksBorrowedCount(books) {
   //Create a function named getBooksBorrowedCount that takes in a books array
